@@ -1,0 +1,15 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- Left and right spacing of buttons -->
+    <dimen name="left_right_button_spacing">24dp</dimen>
+
+    <!-- Height of each list item -->
+    <dimen name="list_item_height">88dp</dimen>
+    <dimen name="min_dim_touch_targets">48dp</dimen>
+    <dimen name="default_dim">16dp</dimen>
+    <dimen name="half_default_dim">8dp</dimen>
+    <dimen name="product_detail_image_height">200dp</dimen>
+</resources>

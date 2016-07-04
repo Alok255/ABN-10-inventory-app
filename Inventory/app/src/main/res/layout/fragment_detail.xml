@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        tools:context="com.example.android.justjava.MainActivity">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/product_detail_image_height"
+            android:layout_marginBottom="@dimen/half_default_dim">
+
+            <ImageView
+                android:id="@+id/product_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:alpha="0.9"
+                android:scaleType="centerCrop"
+                tools:src="@mipmap/ic_launcher"/>
+
+            <TextView
+                android:id="@+id/name_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@color/transparent_black"
+                android:gravity="left"
+                android:paddingLeft="@dimen/default_dim"
+                android:paddingRight="@dimen/default_dim"
+                android:paddingBottom="@dimen/half_default_dim"
+                android:paddingTop="@dimen/half_default_dim"
+                android:textColor="@android:color/white"
+                android:textAppearance="?android:textAppearanceLarge"
+                tools:text="Green apple"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/half_default_dim"
+            android:paddingTop="@dimen/half_default_dim">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="end"
+                android:paddingLeft="@dimen/half_default_dim"
+                android:text="from"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="16sp"
+                android:textStyle="italic"/>
+
+            <TextView
+                android:id="@+id/supplier_text_view"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:paddingLeft="@dimen/half_default_dim"
+                android:paddingRight="@dimen/half_default_dim"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                tools:text="Colorado Farming"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/price_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingBottom="@dimen/half_default_dim"
+            android:paddingTop="@dimen/half_default_dim"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@android:color/black"
+            tools:text="$ 5.12"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/default_dim">
+
+            <Button
+                android:id="@+id/minus_button"
+                android:layout_width="@dimen/min_dim_touch_targets"
+                android:layout_height="@dimen/min_dim_touch_targets"
+                android:text="@string/minus"
+                android:textColor="@android:color/white"
+                android:textSize="24sp"/>
+
+            <TextView
+                android:id="@+id/quantity_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/half_default_dim"
+                android:paddingRight="@dimen/half_default_dim"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@android:color/black"
+                tools:text="2"/>
+
+            <Button
+                android:id="@+id/plus_button"
+                android:layout_width="@dimen/min_dim_touch_targets"
+                android:layout_height="@dimen/min_dim_touch_targets"
+                android:text="@string/plus"
+                android:textColor="@android:color/white"
+                android:textSize="24sp"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/order_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="order from supplier"
+            android:textColor="@android:color/white"/>
+
+        <Button
+            android:id="@+id/delete_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="delete this product"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/sold_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/default_dim"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@color/colorAccent"
+            tools:text="Sold 15 times."/>
+    </LinearLayout>
+</ScrollView>
